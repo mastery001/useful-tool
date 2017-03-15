@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entitys>
+	<class name="cn.jxqt.po.User" table="t_user">
+		<!-- foreign-key="外键表名" -->
+		<id name="u_id" column="" length="7" type="" auto_increment="false"></id>
+		<property name="u_name" column="" length="20" type="" not-null=""
+			default=""  >
+
+		</property>
+	</class>
+	
+	<class name="cn.jxqt.po.StaMethod" table="t_stamethod">
+		<!-- foreign-key="外键表名" -->
+		<id name="standared" column="sta_id" length="7" type="" foreign-key="t_sta"></id>
+		<id name="relation" column="rel_id" length="20" type="" foreign-key="t_relation"></id>
+	</class>
+</entitys>
